@@ -32,11 +32,11 @@
 
     <div id="home" class="hero-section">
         <div class="left-section">
-            <h1>Hi I'm John Doe</h1>
+            <h1>Hi I'm Konrad Krok</h1>
             <h2>And I'm <span id="element"></span></h2>
             <p>I create cool websites that look awesome and are easy to use. Let's make something amazing together!</p>
             <div class="btn-box">
-                <button class="btn">Download CV</button>
+                <button class="btn" onclick="downloadCV()">Download CV</button>
             </div>
             <div class="social-icons">
                 <i class='bx bxs-envelope'></i>
@@ -212,6 +212,14 @@
             window.scrollTo({
                 top: '0'
             })
+        }
+    </script>
+    <script>
+        function downloadCV() {
+            const link = document.createElement('a');
+            link.href = 'Konrad_Krok_CV.pdf'; // Ścieżka do Twojego pliku
+            link.download = 'Konrad_Krok_CV.pdf'; // Nazwa pliku do pobrania
+            link.click();
         }
     </script>
 
